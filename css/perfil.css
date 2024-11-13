@@ -1,0 +1,128 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: "ui-monospace";
+}
+body{
+
+    header {
+        width: 100%;
+        justify-content: space-between;
+        display: flex;
+        background: #FF3131;
+        align-items: center;
+
+        a{
+            img {
+                margin: 1rem;
+                width: 5rem;
+                border-radius: 45%;
+                border: 5px solid white;
+            }
+        }
+        .busqueda{
+            width: 100%;
+            font-family: "Arial";
+            font-size: 1rem;
+            font-style: italic;
+            color: #888;
+            border-radius: 1rem;
+            padding: 1rem;
+        }
+        nav{
+            display: flex;
+            flex-direction: row;
+            li{
+                display: flex;
+                flex-direction: row;
+                a{
+                    font-family: sans-serif;
+                    display: flex;
+                    text-decoration: 0;
+                    color: white;
+                }
+            }
+            ul{
+                display: flex;
+                align-items: center;
+                li{
+                    a{
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        width: 100%;
+                        img {
+                            width: 5rem;
+                            border-radius: 45%;
+                            border: 0;
+                        }
+                    }
+                }
+            }
+            ul{
+                display: flex;
+                align-items: center;
+                a{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 100%;
+                    img {
+                        width: 5rem;
+                        border-radius: 45%;
+                        border: 0;
+                    }
+                }
+            }
+        }
+    }
+    main{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        padding-top: 4rem;
+        .Recuadro{
+            width: 39%;
+            text-decoration: 0;
+            border: black 0.2rem solid;
+            padding-left: 4rem;
+            padding-block-end: 1rem;
+            h1{
+                font-family: sans-serif;
+                display: flex;
+                text-decoration: 0;
+                padding-top: 1rem;
+                padding-block-end: 1rem;
+            }
+            h2{
+                font-family: sans-serif;
+                display: flex;
+                padding-block-end: 0.5rem;
+            }
+                .Introducir_correo_electronico{
+                    width: 70%;
+                    border-radius: 1rem;
+                    font-family: "Arial";
+                    font-size: 1rem;
+                    font-style: italic;
+                    color: #888;
+                    }
+                }
+            h2 {
+                font-family: sans-serif;
+                display: flex;
+                padding-block-end: 0.5rem;
+                padding-top: 1rem;
+            }
+                .Introducir_contraseña {
+                    width: 70%;
+                    border-radius: 1rem;
+                    font-family: "Arial";
+                    font-size: 1rem;
+                    font-style: italic;
+                    color: #888;
+                }
+        }
+    }
+}
