@@ -88,5 +88,57 @@ body{
                 border: black 0.2rem solid;
             }
         }
+        .Novedades{
+            display: flex;
+            justify-content: center;
+            padding-top: 5rem;
+            ul{
+                font-family: "Arial Black", sans-serif;
+                border-bottom: black 0.2rem solid;
+            }
+
+        }
+        ul{
+            .Botas_De_Novedades{
+                display: flex;
+                padding-top: 4rem;
+                padding-left: 6rem;
+                a{
+                    img{
+                        width: 65%;
+                        border: black 0.2rem solid;
+                    }
+                }
+            }
+        }
+        .Descripcion_de_las_botas{
+            ul{
+                li{
+                    display: flex;
+                    padding-top: 1rem;
+                    padding-left: 6rem;
+                    a{
+                        width: 65%;
+                        font-family: "Arial Black", sans-serif;
+                        padding-block-end: 4rem;
+                    }
+                }
+            }
+        }
+    }
+    footer{
+        padding-left: 1rem;
+        width: 100%;
+        justify-content: space-between;
+        background: #FF3131;
+        align-items: center;
+        a{
+            font-family: "Arial Black", sans-serif;
+            color: white;
+            padding-left: 1rem;
+            img{
+                width: 2rem;
+            }
+        }
     }
 }
