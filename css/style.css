@@ -22,7 +22,14 @@ body{
                 border: 5px solid white;
             }
         }
-
+        .busqueda{
+            width: 100%;
+            font-family: "Arial";
+            font-style: italic;
+            color: #888;
+            border-radius: 1rem;
+            padding: 1rem;
+        }
         nav{
             display: flex;
             flex-direction: row;
