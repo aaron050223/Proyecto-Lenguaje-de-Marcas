@@ -82,79 +82,88 @@ body {
         }
     }
     main {
-        ul {
-            display: flex;
-            align-items: center;
-            li {
-                padding-left: 4rem;
+            ul {
                 display: flex;
-                flex-direction: column;
-                a {
-                    padding-top: 4rem;
-                    img {
-                        width: 35rem;
+                align-items: center;
+                li {
+                    padding-left: 4rem;
+                    display: flex;
+                    flex-direction: column;
+                    a {
+                        padding-top: 4rem;
+                        img {
+                            width: 35rem;
+                        }
+                    }
+                }
+                li {
+                    a {
+                        width: 80%;
+                        font-family: Arial Black, Helvetica, sans-serif;
+                        font-size: 1.7rem;
+                        padding-block-end: 2rem;
+                    }
+                    select {
+                        margin: 0.2rem;
+                        width: 33rem;
+                        font-family: "Arial";
+                        font-size: 1rem;
+                        font-style: italic;
+                        color: #888;
+                        border-radius: 1rem;
+                        padding: 1rem;
+                        justify-content: space-between;
+                    }
+                    .CESTA {
+                        width: 50%;
+                        margin: 2rem;
+                        background: #FF3131;
+                        border-radius: 1rem;
+                        padding-left: 2.5rem;
+                        padding-top: 1.5rem;
+                        padding-bottom: 1.5rem;
+                        padding-right: 1.5rem;
+                        border: black 0.1rem solid;
                     }
                 }
             }
-            li {
-                a {
-                    width: 80%;
-                    font-family: Arial Black, Helvetica, sans-serif;
-                    font-size: 1.7rem;
-                    padding-block-end: 2rem;
-                }
-                select {
-                    margin: 0.2rem;
-                    width: 33rem;
-                    font-family: "Arial";
-                    font-size: 1rem;
-                    font-style: italic;
-                    color: #888;
-                    border-radius: 1rem;
-                    padding: 1rem;
-                    justify-content: space-between;
-                }
-                .CESTA {
-                    width: 50%;
-                    margin: 2rem;
-                    background: #FF3131;
-                    border-radius: 1rem;
-                    padding-left: 2.5rem;
-                    padding-top: 1.5rem;
-                    padding-bottom: 1.5rem;
-                    padding-right: 1.5rem;
-                    border: black 0.1rem solid;
-                }
-            }
         }
-    }
     .Novedades{
         display: flex;
         justify-content: center;
         padding-top: 5rem;
-        .ul1{
+        ul{
+            display: flex;
+            flex-direction: row;
             font-family: "Arial Black", sans-serif;
             border-bottom: black 0.2rem solid;
         }
     }
-    .ul2{
+    ul{
+        display: flex;
+        flex-direction: row;
         .Botas_De_Novedades{
+            display: flex;
+            flex-direction: row;
             a{
+                display: flex;
+                flex-direction: row;
                 img{
-                    width: 25%;
+                    width: 75%;
                     border: black 0.2rem solid;
                 }
             }
         }
     }
     .Descripcion_de_las_botas{
-        .ul3{
+        ul{
             li{
+                width: 100%;
                 display: flex;
-                padding-top: 1rem;
-                padding-left: 6rem;
+                flex-direction: row;
+                padding-left: 5rem;
                 a{
-                    width: 65%;
+                    width: 100%;
                     font-family: "Arial Black", sans-serif;
                     padding-block-end: 4rem;
                 }
