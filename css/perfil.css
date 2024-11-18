@@ -49,16 +49,9 @@ body {
             }
 
             ul {
-                display: flex;
-                align-items: center;
-
                 li {
-                    a {
-                        display: flex;
-                        align-items: center;
-                        justify-content: center;
+                    a{
                         width: 100%;
-
                         img {
                             width: 5rem;
                             border-radius: 45%;
@@ -71,6 +64,7 @@ body {
             ul {
                 display: flex;
                 align-items: center;
+                padding-left: 2rem;
 
                 a {
                     display: flex;
@@ -90,10 +84,10 @@ body {
 
     main {
         .Recuadro {
-            width: 39%;
+            width: 40%;
             text-decoration: 0;
             border: 0.2rem solid;
-
+            margin: 4rem auto;
             li {
                 list-style-type: none;
                 justify-content: center;
