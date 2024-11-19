@@ -107,7 +107,11 @@ body {
                     display: flex;
                     padding-left: 2rem;
                 }
-
+                .p1{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                }
                 .Introducir_correo_electronico{
                     padding-left: 4rem;
                     width: 75%;
@@ -125,6 +129,11 @@ body {
                 padding-block-end: 0.5rem;
                 padding-top: 1rem;
                 padding-bottom: 0.5rem;
+            }
+            .p2{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
             }
                 .Introducir_contraseña {
                     width: 75%;
