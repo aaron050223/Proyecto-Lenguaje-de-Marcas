@@ -1,0 +1,156 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: "ui-monospace";
+}
+body {
+    header {
+        width: 100%;
+        justify-content: space-between;
+        display: flex;
+        background: #FF3131;
+        align-items: center;
+
+        a {
+            img {
+                margin: 1rem;
+                width: 5rem;
+                border-radius: 45%;
+                border: 5px solid white;
+            }
+        }
+
+        .busqueda {
+            width: 100%;
+            font-family: "Arial";
+            font-size: 1rem;
+            font-style: italic;
+            color: #888;
+            border-radius: 1rem;
+            padding: 1rem;
+        }
+
+        nav {
+            display: flex;
+            flex-direction: row;
+
+            li {
+                display: flex;
+                flex-direction: row;
+
+                a {
+                    font-family: sans-serif;
+                    display: flex;
+                    text-decoration: 0;
+                    color: white;
+                }
+            }
+            ul {
+                display: flex;
+                align-items: center;
+                li {
+                    a {
+                        display: flex;
+                        align-items: center;
+                        img {
+                            border: 0;
+                        }
+                    }
+                }
+            }
+            ul {
+                a {
+                    img {
+                    }
+                }
+            }
+        }
+    }
+    main {
+        .Recuadro {
+            width: 70%;
+            text-decoration: 0;
+            border: 0.2rem solid;
+            margin: 4rem auto;
+            li {
+                list-style-type: none;
+                justify-content: center;
+                display: flex;
+                flex-direction: column;
+
+                h1 {
+                    border-bottom: black 0.2rem solid;
+                    font-family: sans-serif;
+                    display: flex;
+                    text-decoration: 0;
+                    padding-top: 1rem;
+                    padding-block-end: 1rem;
+                    justify-content: center;
+
+                }
+                a{
+                   margin: 1rem;
+                    color: black;
+                    font-family: "Arial Black";
+                    img{
+                       width: 11rem;
+                        border: 0.2rem solid;
+                    }
+                }
+            }
+            h2 {
+                font-family: sans-serif;
+                display: flex;
+                padding-block-end: 0.5rem;
+                padding-top: 1rem;
+                padding-left: 1rem;
+                padding-bottom: 0.5rem;
+            }
+            .p2{
+
+                padding-left: 1rem;
+                padding-bottom: 1rem;
+
+                .Introducir_contraseña {
+                    width: 74%;
+                    font-family: "Arial";
+                    font-size: 1rem;
+                    font-style: italic;
+                    color: #888;
+                    padding: 1rem;
+                    border-radius: 1rem;
+                    padding-left: 1rem;
+                }
+                .CESTA{
+                    width: 25%;
+                    margin: 2rem;
+                    font-family: "Arial Black";
+                    text-align: center;
+                    font-size: 0.7rem;
+                    background: #FF3131;
+                    border-radius: 1rem;
+                    padding-left: 1.5rem;
+                    padding-top: 1rem;
+                    padding-bottom: 1rem;
+                    padding-right: 1.5rem;
+                    border: black 0.1rem solid;
+                }
+            }
+            .Parte_de_abajo{
+                padding-top: 1.5rem;
+                padding-right: 1.5rem;
+                padding-bottom: 1.5rem;
+                font-family: "Arial";
+                text-align: right;
+                a{
+                    font-family: "Arial";
+                }
+                .Iniciar_sesion{
+                    text-align: right;
+                    color: #FF3131;
+                }
+            }
+        }
+    }
+}
