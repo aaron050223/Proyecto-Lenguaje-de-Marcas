@@ -89,10 +89,15 @@ body {
                     justify-content: center;
 
                 }
-                a{
-                   margin: 1rem;
+                .nombre{
                     color: black;
                     font-family: "Arial Black";
+                    text-align: center;
+                    padding-top: 2.5rem;
+                }
+                .foto{
+                   margin: 1rem;
+                    padding-left: 25.5rem;
                     img{
                        width: 11rem;
                         border: 0.2rem solid;
