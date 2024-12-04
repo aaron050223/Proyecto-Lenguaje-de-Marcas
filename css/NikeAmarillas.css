@@ -1,9 +1,10 @@
-*{
+* {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
     font-family: "ui-monospace";
 }
+
 body {
     header {
         width: 100%;
@@ -131,16 +132,15 @@ body {
     }
 
     .menu-desplegable a:hover {
-        &:hover {
-            transition: 0.3s;
-            background-color: #FF3131;
-            color: white;
-        }
+        transition: 0.3s;
+        background-color: #FF3131;
+        color: white;
     }
 
     #menu-toggle:checked + .menu-icono + .menu-desplegable {
         display: block;
     }
+
     main {
         ul {
             display: flex;
@@ -153,112 +153,171 @@ body {
                 a {
                     padding-top: 4rem;
                 }
-                    img {
-                        width: 35rem;
-                    }
+                img {
+                    width: 35rem;
                 }
             }
-            li {
-                a {
-                    width: 80%;
-                    font-family: Arial Black, Helvetica, sans-serif;
-                    font-size: 1.7rem;
-                    padding-block-end: 2rem;
-                }
-                select {
-                    margin: 0.2rem;
-                    width: 33rem;
-                    font-family: "Arial";
-                    font-size: 1rem;
-                    font-style: italic;
-                    color: #888;
-                    border-radius: 1rem;
-                    padding: 1rem;
-                    justify-content: space-between;
-                }
-                .CESTA {
-                    display: flex;
-                    justify-content: center;
-                    width: fit-content;
-                    font-family: "Arial Black";
-                    text-align: center;
-                    font-size: 0.7rem;
-                    border-radius: 1rem;
-                    border: #FF3131 0.2rem solid;
-                    color: #FF3131;
-                    padding: 1rem;
-                    transition: 0.3s;
+        }
+        li {
+            a {
+                width: 80%;
+                font-family: Arial Black, Helvetica, sans-serif;
+                font-size: 1.7rem;
+                padding-block-end: 2rem;
+            }
+            select {
+                margin: 0.2rem;
+                width: 33rem;
+                font-family: "Arial";
+                font-size: 1rem;
+                font-style: italic;
+                color: #888;
+                border-radius: 1rem;
+                padding: 1rem;
+                justify-content: space-between;
+            }
+            .CESTA {
+                display: flex;
+                justify-content: center;
+                width: fit-content;
+                font-family: "Arial Black";
+                text-align: center;
+                font-size: 0.7rem;
+                border-radius: 1rem;
+                border: #FF3131 0.2rem solid;
+                color: #FF3131;
+                padding: 1rem;
+                transition: 0.3s;
 
-                    &:hover {
-                        transition: 0.3s;
-                        transform: scale(1.1);
-                        background-color: #FF3131;
-                        border: white solid 0.2rem;
-                        color: white;
-                        cursor: pointer;
+                &:hover {
+                    transform: scale(1.1);
+                    background-color: #FF3131;
+                    border: white solid 0.2rem;
+                    color: white;
+                    cursor: pointer;
                 }
             }
         }
     }
-    .Novedades{
+
+    .Novedades {
         display: flex;
         justify-content: center;
         padding-top: 5rem;
         padding-block-end: 4rem;
-        ul{
+        ul {
             display: flex;
             flex-direction: row;
             font-family: "Arial Black", sans-serif;
             border-bottom: black 0.2rem solid;
         }
     }
-    ul{
-        .Botas_De_Novedades{
+
+    ul {
+        .Botas_De_Novedades {
             display: flex;
             flex-direction: row;
             padding-left: 6rem;
-            a{
-                img{
+            a {
+                img {
                     width: 60%;
                     border: black 0.2rem solid;
                 }
             }
         }
     }
-    .Descripcion_de_las_botas{
-        li{
+
+    .Descripcion_de_las_botas {
+        li {
             width: 100%;
             display: flex;
             flex-direction: row;
             padding-left: 6rem;
+            padding-bottom: 10rem;
 
             a {
                 width: 70%;
                 font-size: 1rem;
                 font-family: "Arial Black", sans-serif;
                 padding-bottom: 4rem;
-                padding:0;
+                padding: 0;
+            }
+        }
+    }
+
+    footer {
+        background-color: #FF3131;
+        color: white;
+        padding: 2rem 1rem;
+        text-align: center;
+        font-family: "Arial", sans-serif;
+        font-size: 0.9rem;
+
+        .footer-contenido {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1rem;
+
+            .footer-logo {
+                img {
+                    max-width: 100px;
+                    height: auto;
+                    border-radius: 45%;
+                    border: 2px solid white;
+                }
+            }
+
+            .footer-enlaces {
+                list-style: none;
+                padding: 0;
+                margin: 0;
+                display: flex;
+                justify-content: center;
+                gap: 1.5rem;
+
+                li {
+                    a {
+                        color: white;
+                        text-decoration: none;
+                        font-size: 0.9rem;
+                        transition: color 0.3s;
+                        font-family: "Arial Black", sans-serif;
+
+                        &:hover {
+                            color: #333;
+                        }
+                    }
+                }
             }
         }
     }
 }
-footer {
-    padding-top: 10rem;
-    li{
-        padding-left: 1rem;
-        width: 100%;
-        justify-content: space-between;
-        background: #FF3131;
-        align-items: center;
 
-        a {
-            font-family: "Arial Black", sans-serif;
-            color: white;
-            padding-left: 1rem;
+/* Media Queries para Responsividad */
+@media (max-width: 768px) {
 
-            img {
-                width: 2rem;
+    main {
+        ul {
+            flex-direction: column;
+            align-items: flex-start;
+            li {
+                padding-left: 2rem;
+                img {
+                    width: 90%;
+                }
             }
+        }
+    }
+
+    footer {
+        padding-top: 5rem;
+
+        ul {
+            flex-direction: column;
+            align-items: flex-start;
         }
     }
 }

@@ -143,6 +143,8 @@ body {
         display: block;
     }
     main {
+        padding-top:3rem;
+        padding-bottom:3rem;
         .Recuadro {
             width: 40%;
             text-decoration: 0;
@@ -220,6 +222,55 @@ body {
                     &:hover{
                         color: firebrick;
                         cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+    footer {
+        background-color: #FF3131;
+        color: white;
+        padding: 2rem 1rem;
+        text-align: center;
+        font-family: "Arial", sans-serif;
+        font-size: 0.9rem;
+
+        .footer-contenido {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1rem;
+
+            .footer-logo {
+                img {
+                    max-width: 100px;
+                    height: auto;
+                    border-radius: 45%;
+                    border: 2px solid white;
+                }
+            }
+
+            .footer-enlaces {
+                list-style: none;
+                padding: 0;
+                margin: 0;
+                display: flex;
+                justify-content: center;
+                gap: 1.5rem;
+
+                li {
+                    a {
+                        color: white;
+                        text-decoration: none;
+                        font-size: 0.9rem;
+                        transition: color 0.3s;
+                        font-family: "Arial Black", sans-serif;
+
+                        &:hover {
+                            color: #333;
+                        }
                     }
                 }
             }
