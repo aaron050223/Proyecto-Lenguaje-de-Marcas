@@ -13,7 +13,7 @@ body{
         background: #FF3131;
         align-items: center;
 
-        a{
+        a {
             img {
                 margin: 1rem;
                 width: 5rem;
@@ -21,7 +21,8 @@ body{
                 border: 5px solid white;
             }
         }
-        .busqueda{
+
+        .busqueda {
             width: 100%;
             font-family: "Arial";
             font-size: 1rem;
@@ -30,28 +31,52 @@ body{
             border-radius: 1rem;
             padding: 1rem;
         }
-        nav{
+
+        nav {
             display: flex;
             flex-direction: row;
-            li{
+
+            li {
                 display: flex;
                 flex-direction: row;
-                a{
+
+                a {
                     font-family: sans-serif;
                     display: flex;
                     text-decoration: 0;
                     color: white;
                 }
             }
-            ul{
+
+            ul {
                 display: flex;
                 align-items: center;
-                li{
-                    a{
+
+                li {
+                    a {
                         display: flex;
                         align-items: center;
                         justify-content: center;
                         width: 100%;
+
+                        img {
+                            width: 5rem;
+                            border-radius: 45%;
+                            border: 0;
+                        }
+                    }
+                }
+
+                ul {
+                    display: flex;
+                    align-items: center;
+
+                    a {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        width: 100%;
+
                         img {
                             width: 5rem;
                             border-radius: 45%;
@@ -60,22 +85,62 @@ body{
                     }
                 }
             }
-            ul{
-            display: flex;
-            align-items: center;
-            a{
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                width: 100%;
-                img {
-                    width: 5rem;
-                    border-radius: 45%;
-                    border: 0;
-                }
-            }
         }
+    }
+
+    .menu-hamburguesa {
+        position: relative;
+        display: inline-block;
+    }
+
+    #menu-toggle {
+        display: none;
+    }
+
+    .menu-icono {
+        cursor: pointer;
+        display: inline-block;
+    }
+
+    .menu-icono img {
+        width: 5rem;
+        border-radius: 45%;
+        margin: 1rem;
+    }
+
+    .menu-desplegable {
+        display: none;
+        position: absolute;
+        top: 6rem;
+        right: 0;
+        background-color: #fff;
+        border-radius: 1rem;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        z-index: 1000;
+        padding: 1rem;
+    }
+
+    .menu-desplegable a {
+        display: block;
+        font-family: sans-serif;
+        text-decoration: none;
+        color: #333;
+        padding: 1rem;
+        font-size: 1rem;
+        border-radius: 0.5rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .menu-desplegable a:hover {
+        &:hover {
+            transition: 0.3s;
+            background-color: #FF3131;
+            color: white;
         }
+    }
+
+    #menu-toggle:checked + .menu-icono + .menu-desplegable {
+        display: block;
     }
     main{
         .BotasBellingham{

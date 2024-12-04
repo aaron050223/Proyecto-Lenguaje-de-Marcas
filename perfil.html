@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Perfil // Cucurella</title>
+    <title>Perfil | Cucurella</title>
     <link rel="stylesheet" href="css/perfil.css">
 </head>
 
@@ -11,12 +11,24 @@
     <a href="index.html">
         <img src="imagen/index/header/logoRojo2.png" alt="Icono de la web">
     </a>
+    <input class="busqueda" type="text" placeholder="Buscar productos, deporte...">
     <nav>
         <ul class="1">
             <li>
-                <a href="menus.html"><img src="imagen/index/header/3puntos.png" alt="Icono de la web"></a>
-                <a href="cesta.html"><img src="imagen/index/header/NuevaCesta.png"></a>
-                <a href="perfil.html"><img src="imagen/index/header/NuevoLogo.png" alt="Icono de la web"></a>
+                <!-- Menú de hamburguesa con checkbox -->
+                <div class="menu-hamburguesa">
+                    <input type="checkbox" id="menu-toggle">
+                    <label for="menu-toggle" class="menu-icono">
+                        <img src="imagen/index/header/3puntos.png" alt="Icono de menú hamburguesa">
+                    </label>
+                    <div class="menu-desplegable">
+                        <a href="BotasDeFutbol.html">Botas de fútbol</a>
+                        <a href="seccion2.html">Material de entreno</a>
+                        <a href="seccion3.html">Camisetas de Fútbol</a>
+                    </div>
+                </div>
+                <a href="cesta.html"><img src="imagen/index/header/NuevaCesta.png" alt="Icono de la cesta"></a>
+                <a href="perfil.html"><img src="imagen/index/header/NuevoLogo.png" alt="Icono del perfil"></a>
             </li>
         </ul>
     </nav>

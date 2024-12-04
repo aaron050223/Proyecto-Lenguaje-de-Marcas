@@ -49,9 +49,34 @@ body {
             }
 
             ul {
+                display: flex;
+                align-items: center;
+
                 li {
-                    a{
+                    a {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
                         width: 100%;
+
+                        img {
+                            width: 5rem;
+                            border-radius: 45%;
+                            border: 0;
+                        }
+                    }
+                }
+
+                ul {
+                    display: flex;
+                    align-items: center;
+
+                    a {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        width: 100%;
+
                         img {
                             width: 5rem;
                             border-radius: 45%;
@@ -60,28 +85,63 @@ body {
                     }
                 }
             }
-
-            ul {
-                display: flex;
-                align-items: center;
-                padding-left: 2rem;
-
-                a {
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    width: 100%;
-
-                    img {
-                        width: 5rem;
-                        border-radius: 45%;
-                        border: 0;
-                    }
-                }
-            }
         }
     }
 
+    .menu-hamburguesa {
+        position: relative;
+        display: inline-block;
+    }
+
+    #menu-toggle {
+        display: none;
+    }
+
+    .menu-icono {
+        cursor: pointer;
+        display: inline-block;
+    }
+
+    .menu-icono img {
+        width: 5rem;
+        border-radius: 45%;
+        margin: 1rem;
+    }
+
+    .menu-desplegable {
+        display: none;
+        position: absolute;
+        top: 6rem;
+        right: 0;
+        background-color: #fff;
+        border-radius: 1rem;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        z-index: 1000;
+        padding: 1rem;
+    }
+
+    .menu-desplegable a {
+        display: block;
+        font-family: sans-serif;
+        text-decoration: none;
+        color: #333;
+        padding: 1rem;
+        font-size: 1rem;
+        border-radius: 0.5rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .menu-desplegable a:hover {
+        &:hover {
+            transition: 0.3s;
+            background-color: #FF3131;
+            color: white;
+        }
+    }
+
+    #menu-toggle:checked + .menu-icono + .menu-desplegable {
+        display: block;
+    }
     main {
         .Recuadro {
             width: 40%;
@@ -157,6 +217,10 @@ body {
                 .Iniciar_sesion{
                     text-align: right;
                     color: #FF3131;
+                    &:hover{
+                        color: firebrick;
+                        cursor: pointer;
+                    }
                 }
             }
         }

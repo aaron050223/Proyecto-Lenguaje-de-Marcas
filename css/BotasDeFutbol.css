@@ -114,7 +114,7 @@ body {
         right: 0;
         background-color: #fff;
         border-radius: 1rem;
-        box-shadow: 0 4px 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         z-index: 1000;
         padding: 1rem;
     }
@@ -142,121 +142,103 @@ body {
         display: block;
     }
     main {
-        .Recuadro {
-            width: 70%;
-            text-decoration: 0;
-            border: 0.2rem solid;
-            margin: 4rem auto;
-            li {
-                list-style-type: none;
-                justify-content: center;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+
+        .Novedades {
+            text-align: center;
+            font-size: 2rem;
+            margin: 5rem;
+            font-family: "Arial Black";
+        }
+
+        .contenedor {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-content: space-between;
+            width: 100%;
+            height: 100%;
+            padding: 1rem;
+
+            .item {
                 display: flex;
                 flex-direction: column;
-
-                h1 {
-                    border-bottom: black 0.2rem solid;
-                    font-family: sans-serif;
-                    display: flex;
-                    text-decoration: 0;
-                    padding-top: 1rem;
-                    padding-block-end: 1rem;
-                    justify-content: center;
-
-                }
-                .nombre{
-                    color: black;
-                    font-family: "Arial Black";
-                    text-align: center;
-                    padding-top: 2.5rem;
-                }
-                .foto{
-                    display: flex;
-                    justify-content: center;
-                   margin: 1rem;
-                    img{
-                       width: 11rem;
-                        border: 0.2rem solid;
-                    }
-                }
-            }
-            h2 {
-                font-family: sans-serif;
-                display: flex;
-                padding-block-end: 0.5rem;
-                padding-top: 1rem;
-                padding-left: 1rem;
-                padding-bottom: 0.5rem;
-            }
-            .p2{
-                display: flex;
-                justify-content: space-between;
                 align-items: center;
-                gap: 2rem;
-                padding: 1rem;
+                justify-content: center;
+                width: 50%;
+                height: 50%;
+                text-align: center;
+                position: relative; /* Necesario para controlar las capas de la imagen y el texto */
 
-                .Introducir_contraseña {
-                    display: flex;
-                    width: 100%;
-                    height: fit-content;
-                    font-family: "Arial";
-                    font-size: 1rem;
-                    font-style: italic;
-                    color: red;
-                    padding: 1rem;
+                a {
+                    position: relative;
+                    z-index: 1;
 
+                    img {
+                        width: 60%;
+                        height: 60%;
+                        object-fit: cover;
+                        border: 2px solid #fff;
+                        border-radius: 8px;
+                        transition: transform 0.3s ease;
+                    }
 
-                    border-radius: 1rem;
-
-                }
-                .CESTA{
-                    display: flex;
-                    justify-content: center;
-                    width: fit-content;
-                    font-family: "Arial Black";
-                    text-align: center;
-                    font-size: 0.7rem;
-
-                    border-radius: 1rem;
-                    border: #FF3131 0.2rem solid;
-                    color: #FF3131;
-                    padding: 1rem;
-                    transition: 0.3s;
-                    &:hover{
-                        transition: 0.3s;
+                    img:hover {
                         transform: scale(1.1);
-                        background-color: #FF3131;
-                        border: white solid 0.2rem;
-                        color: white;
-                        cursor: pointer;
+                        z-index: 0; /* La imagen se agranda, pero queda detrás del texto */
                     }
                 }
-            }
-            .Parte_de_abajo{
-                padding-top: 1.5rem;
-                padding-right: 1.5rem;
-                padding-bottom: 1.5rem;
-                font-family: "Arial";
-                text-align: right;
-                a{
-                    font-family: "Arial";
+
+                p {
+                    margin-top: 0.5rem;
+                    font-size: 1rem;
+                    color: #333;
+                    font-family: Arial, sans-serif;
+                    font-weight: bold;
+                    position: relative;
+                    z-index: 2; /* Asegura que el texto siempre esté por encima */
+                    background-color: rgba(255, 255, 255, 0.7); /* Fondo semitransparente para mayor legibilidad */
+                    padding: 0.2rem 0.5rem;
+                    border-radius: 4px;
                 }
-                .Iniciar_sesion{
-                    text-align: right;
-                    color: #FF3131;
+            }
+        }
+
+        .Descripcion_de_las_botas {
+            li {
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                padding-left: 6rem;
+
+                a {
+                    width: 70%;
+                    font-size: 1rem;
+                    font-family: "Arial Black", sans-serif;
+                    padding-bottom: 4rem;
+                    padding: 0;
                 }
             }
         }
     }
-    @media(max-width:1000px){
-        header {
+    footer {
+        padding-top: 10rem;
+        li{
+            padding-left: 1rem;
+            width: 100%;
+            justify-content: space-between;
+            background: #FF3131;
+            align-items: center;
 
-        }
-        main {
-            .Recuadro {
-                .p2{
-                    display: flex;
-                    flex-direction: column;
-                    align-items: start;
+            a {
+                font-family: "Arial Black", sans-serif;
+                color: white;
+                padding-left: 1rem;
+
+                img {
+                    width: 2rem;
                 }
             }
         }
