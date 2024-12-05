@@ -106,7 +106,7 @@ body {
     background-color: #f0f0f0;
 }
 
-/* Estilos para pantallas pequeñas */
+/* este media sirve para pantallas como las de los moviles */
 @media (max-width: 768px) {
     body {
         background-color: #ffffff;
