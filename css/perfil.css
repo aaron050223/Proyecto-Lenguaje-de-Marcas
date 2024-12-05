@@ -145,6 +145,7 @@ body {
     main {
         padding-top:3rem;
         padding-bottom:3rem;
+        height: 90vh;
         .Recuadro {
             width: 40%;
             text-decoration: 0;
