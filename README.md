@@ -119,3 +119,8 @@ body {
 # Fase 3: Implementación y Validación del Código
 
 La verdad es que al validar el codigo me dio bastante problemas, por lo que validarlo me ayudo bastante a localizar mis fallos y poder limpiarlo un poco
+
+## Video Presentacion
+
+https://youtu.be/OeeG8ptIHj8
+![video](https://youtu.be/OeeG8ptIHj8)
