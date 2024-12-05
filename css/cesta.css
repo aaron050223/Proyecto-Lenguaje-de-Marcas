@@ -141,12 +141,14 @@ body {
     #menu-toggle:checked + .menu-icono + .menu-desplegable {
         display: block;
     }
+
     main {
         .Recuadro {
             width: 70%;
             text-decoration: 0;
             border: 0.2rem solid;
             margin: 4rem auto;
+
             li {
                 list-style-type: none;
                 justify-content: center;
@@ -163,22 +165,26 @@ body {
                     justify-content: center;
 
                 }
-                .nombre{
+
+                .nombre {
                     color: black;
                     font-family: "Arial Black";
                     text-align: center;
                     padding-top: 2.5rem;
                 }
-                .foto{
+
+                .foto {
                     display: flex;
                     justify-content: center;
-                   margin: 1rem;
-                    img{
-                       width: 11rem;
+                    margin: 1rem;
+
+                    img {
+                        width: 11rem;
                         border: 0.2rem solid;
                     }
                 }
             }
+
             h2 {
                 font-family: sans-serif;
                 display: flex;
@@ -187,7 +193,8 @@ body {
                 padding-left: 1rem;
                 padding-bottom: 0.5rem;
             }
-            .p2{
+
+            .p2 {
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
@@ -208,7 +215,8 @@ body {
                     border-radius: 1rem;
 
                 }
-                .CESTA{
+
+                .CESTA {
                     display: flex;
                     justify-content: center;
                     width: fit-content;
@@ -221,7 +229,8 @@ body {
                     color: #FF3131;
                     padding: 1rem;
                     transition: 0.3s;
-                    &:hover{
+
+                    &:hover {
                         transition: 0.3s;
                         transform: scale(1.1);
                         background-color: #FF3131;
@@ -231,23 +240,78 @@ body {
                     }
                 }
             }
-            .Parte_de_abajo{
+
+            .Parte_de_abajo {
                 padding-top: 1.5rem;
                 padding-right: 1.5rem;
                 padding-bottom: 1.5rem;
                 font-family: "Arial";
                 text-align: right;
-                a{
+
+                a {
                     font-family: "Arial";
                 }
-                .Iniciar_sesion{
+
+                .Iniciar_sesion {
                     text-align: right;
                     color: #FF3131;
                 }
             }
         }
     }
-    @media(max-width:1000px){
+
+    footer {
+        background-color: #FF3131;
+        color: white;
+        padding: 2rem 1rem;
+        text-align: center;
+        font-family: "Arial", sans-serif;
+        font-size: 0.9rem;
+
+        .footer-contenido {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1rem;
+
+            .footer-logo {
+                img {
+                    max-width: 100px;
+                    height: auto;
+                    border-radius: 45%;
+                    border: 2px solid white;
+                }
+            }
+
+            .footer-enlaces {
+                list-style: none;
+                padding: 0;
+                margin: 0;
+                display: flex;
+                justify-content: center;
+                gap: 1.5rem;
+
+                li {
+                    a {
+                        color: white;
+                        text-decoration: none;
+                        font-size: 0.9rem;
+                        transition: color 0.3s;
+                        font-family: "Arial Black", sans-serif;
+
+                        &:hover {
+                            color: #333;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(max-width:1000px){
         header {
 
         }
@@ -260,5 +324,4 @@ body {
                 }
             }
         }
-    }
 }
